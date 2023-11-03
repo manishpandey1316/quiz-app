@@ -1,0 +1,26 @@
+.timer-container {
+    margin-top: 20px;
+    height:30px;
+  }
+  
+  .timer {
+    font-size: 18px;
+    font-weight: bold;
+    animation: countdown 11s linear infinite;
+  }
+  
+  @keyframes countdown {
+    0% {
+      color: green;
+      transform: scale(1);
+    }
+    50% {
+      color: orange;
+      transform: scale(1.1);
+    }
+    100% {
+      color: red;
+      transform: scale(1);
+    }
+  }
+  

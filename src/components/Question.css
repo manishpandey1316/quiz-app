@@ -1,0 +1,147 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 600px;
+  width: 600px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 2px 2px 10px 1px #333;
+  overflow: hidden;
+  padding: 20px;
+  position: relative;
+  margin: 20px;
+  background-color:rgba(198, 238, 244, 0.953);
+}
+.container-bottom {
+ 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container-top {
+  width: 90%;
+  display:flex;
+  justify-content :space-around;
+}
+.progress-bar {
+  width: 80%;
+  background-color: white;
+  border-radius: 5px;
+  height: 10px;
+  margin: 30px;
+  box-shadow: 2px 2px 5px 1px grey;
+  align-self: center;
+}
+
+.progress {
+
+  width: 0;
+  height: 100%;
+  background-color: #4caf50;
+ 
+  transition: width 0.5s;
+}
+.question-container {
+  margin: 8px;
+  box-shadow: 0px 0px 10px 1px #a2a3a3;
+  border-radius: 5px;
+  background-color: rgb(37, 182, 37);
+  padding: 5px;
+  font-size: large;
+  font-weight: 600;
+  font-family: "Times New Roman", Times, serif;
+  min-width: 100%;
+  min-height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#question {
+  margin-left: 2px;
+  animation: fadeIn 2s;
+}
+
+.option-container {
+  display: flex;
+  flex-direction: column;
+  margin: 6px 4px;
+  width: 100%;
+  padding: 10px;
+  animation: slideIn 2s;
+}
+
+.option {
+  box-shadow: 0px 0px 4px 1px rgb(128, 123, 123);
+  padding: 5px;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  transition: 0.3s;
+  margin: 5px;
+  min-height: 50px;
+  background-color: white;
+  color: rgb(37, 182, 37);
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.checked {
+  background-color: rgb(37, 182, 37);
+  color: white;
+  box-shadow: 3px 3px 4px 1px rgb(78, 69, 78);
+}
+
+.option:hover {
+  background-color:  rgb(37, 182, 37);
+  color: white;
+}
+
+
+
+
+.heading {
+  color: rgb(37, 182, 37);
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-20px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  
+  .container{
+    margin:auto;
+    height:300px;
+    width: 350px;
+    
+  }
+  .option {
+    min-height: 40px; 
+  }
+
+
+
+  .question-container {
+    font-size: medium;
+  }
+}

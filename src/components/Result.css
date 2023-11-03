@@ -1,0 +1,21 @@
+
+.show-score-1{
+    position:relative;
+    margin: 20px;
+    font-size: 40px;
+    align-self:center;
+    color: rgb(37, 182, 37);
+  }
+  .show-score-2{
+    position:relative;
+    margin: 20px;
+    font-size: 40px;
+    align-self:center;
+    color: rgb(37, 182, 37);
+  } 
+  .try-btn
+  {
+    margin: 20px;
+     position:relative;
+     align-self: center;
+  }
